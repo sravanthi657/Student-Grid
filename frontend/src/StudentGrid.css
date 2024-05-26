@@ -1,0 +1,91 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Center align the filter row */
+    margin-bottom: 20px;
+  }
+  
+  .filter-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-group label {
+    margin-right: 10px;
+  }
+  
+  .filter-group input {
+    padding: 8px;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .student-table th,
+  .student-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .student-table th {
+    background-color: #b0b0b0; /* Shaded gray for table headers */
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pagination button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .pagination span {
+    padding: 8px 12px;
+    font-weight: bold;
+  }
+  
+  .pagination .icon {
+    width: 24px; 
+    height: 24px; 
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .filter-form {
+      flex-direction: column; /* Stack filters vertically on small screens */
+      align-items: stretch; /* Stretch items to full width */
+    }
+  
+    .filter-group input {
+      width: 100%; /* Full width for inputs on small screens */
+    }
+  }
+  
