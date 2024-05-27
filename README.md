@@ -18,11 +18,11 @@ This project is a Student Management System with functionalities for managing st
 
    ```bash
    git clone <repository-url>
-   cd backend
+   cd backend # Navigate to the Backend directory
 2. Set up a virtual environment (optional but recommended):
     ```bash
     python -m venv env
-source env/bin/activate  # On Windows use env\Scripts\activate
+    source env/bin/activate  # On Windows use env\Scripts\activate
 
 3. Install dependencies:
     ```bash 
@@ -31,9 +31,12 @@ source env/bin/activate  # On Windows use env\Scripts\activate
 4. Apply migrations to set up the database:
     ```bash 
    python manage.py migrate
+    
 5. Load initial student data (optional):
     ```bash 
-   python manage.py import_students data/students.csv
+   python manage.py import_students # this will generate the required csvfile
+   python manage.py import_students <pathToDataFile> # You can provide the custom CSV or JSON data file. coulmns are [name, total_marks]
+    
 6. Run the development server:
     ```bash 
    python manage.py runserver
